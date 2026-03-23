@@ -12,10 +12,15 @@ public class IceTask2 {
         
         Scanner scanner = new Scanner(System.in);
         
+        String name;
         double temp;
         double newTemp;
         String unit;
         
+        
+        System.out.println("Enter your name: ");
+        name = scanner.nextLine();
+        System.out.println("Hello " + name + "!");
         
         System.out.print("Enter the temperature:");
         temp = scanner.nextDouble();
@@ -29,12 +34,9 @@ public class IceTask2 {
         
         System.out.println("The temperature is " + newTemp + " after conversion");
         
-        
-        
-        
-        
                 
                 
+                                
         scanner.close();
     }
 }
