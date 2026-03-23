@@ -31,6 +31,8 @@ public class IceTask2 {
         
         
         
+        
+        
                 
                 
         scanner.close();
