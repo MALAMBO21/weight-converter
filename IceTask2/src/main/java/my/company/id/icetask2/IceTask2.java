@@ -22,10 +22,16 @@ public class IceTask2 {
         System.out.print("Convert to Celcius or Fahrenheit? (C or F): ");
         unit = scanner.nextLine().toUpperCase();
         
+        //(condition) ? true : false
+       
+        newTemp = (unit.equals("C")) ? (temp - 32) * 5 / 9 : (temp * 5 / 9) + 32;
+        
+        System.out.println(newTemp);
         
         
         
-        
+                
+                
         scanner.close();
     }
 }
