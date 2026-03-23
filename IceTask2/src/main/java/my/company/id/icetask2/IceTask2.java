@@ -19,8 +19,8 @@ public class IceTask2 {
         System.out.print("Enter the temperature:");
         temp = scanner.nextDouble();
         
-        System.out.print("Convert to Celcius or Degrees?; ");
-        unit = scanner.nextLine();
+        System.out.print("Convert to Celcius or Fahrenheit? (C or F): ");
+        unit = scanner.nextLine().toUpperCase();
         
         
         
