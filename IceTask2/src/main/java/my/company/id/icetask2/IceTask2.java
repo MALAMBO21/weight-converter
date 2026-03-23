@@ -32,10 +32,8 @@ public class IceTask2 {
        
         newTemp = (unit.equals("C")) ? (temp - 32) * 5 / 9 : (temp * 5 / 9) + 32;
         
-        System.out.println("The temperature is " + newTemp + " after conversion");
-        
-                
-                
+        System.out.printf("The temperature is %.2f", newTemp);
+               
                                 
         scanner.close();
     }
