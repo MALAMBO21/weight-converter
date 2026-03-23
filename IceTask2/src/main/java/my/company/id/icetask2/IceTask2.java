@@ -9,6 +9,7 @@ public class IceTask2 {
         
         //Temperature converter
         
+        
         Scanner scanner = new Scanner(System.in);
         
         String name;
