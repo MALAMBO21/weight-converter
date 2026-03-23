@@ -20,7 +20,7 @@ public class IceTask2 {
         temp = scanner.nextDouble();
         
         System.out.print("Convert to Celcius or Fahrenheit? (C or F): ");
-        unit = scanner.nextLine().toUpperCase();
+        unit = scanner.next().toUpperCase();
         
         //(condition) ? true : false
        
