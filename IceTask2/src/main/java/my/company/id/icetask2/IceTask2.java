@@ -1,5 +1,6 @@
 
 package my.company.id.icetask2;
+
 import java.util.Scanner;
 
 public class IceTask2 {
@@ -26,7 +27,7 @@ public class IceTask2 {
        
         newTemp = (unit.equals("C")) ? (temp - 32) * 5 / 9 : (temp * 5 / 9) + 32;
         
-        System.out.println(newTemp);
+        System.out.println("The temperature is " + newTemp + " after conversion");
         
         
         
