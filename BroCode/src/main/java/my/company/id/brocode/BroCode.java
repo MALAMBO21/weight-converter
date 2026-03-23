@@ -31,20 +31,19 @@ public class BroCode {
                System.out.println("Enter your weight in lbs: :");
                weight = scanner.nextDouble();
                newWeight = weight * 0.7542;
-                System.out.println("Your weight is: " + newWeight);
+                System.out.println("Your weight in kgs is: " + newWeight);
                 
                 //Option 2 Convert kgs to lbs
-                
-                if(choice == 2){
-                     System.out.println("Enter your weight n kgs: ");
-                     weight = scanner.nextDouble();
-                     newWeight = weight / 0.7542;
+          }         
+          else if(choice == 2){
+              System.out.println("Enter your weight n kgs: ");
+              weight = scanner.nextDouble();
+              newWeight = weight / 0.7542;
+               System.out.println("Your weight in lbs is: " + newWeight);
                      
-                }
-               
-          }
+                }              
     
- scanner.close();
-}
-}
-        
+    scanner.close();
+          }
+    }
+      
