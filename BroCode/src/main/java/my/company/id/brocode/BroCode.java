@@ -38,12 +38,14 @@ public class BroCode {
           else if(choice == 2){
               System.out.println("Enter your weight n kgs: ");
               weight = scanner.nextDouble();
-              newWeight = weight / 0.7542;
+              newWeight = weight * 2.7542;
                System.out.println("Your weight in lbs is: " + newWeight);
-                     
-                }              
+          }
+               else{
+                  System.out.println("You selected an invalid choice");
     
     scanner.close();
           }
     }
+}
       
