@@ -7,8 +7,7 @@ public class IceTask2 {
 
     public static void main(String[] args) {
         
-        //Temperature conerter
-        
+        //Temperature converter
         
         Scanner scanner = new Scanner(System.in);
         
@@ -33,7 +32,9 @@ public class IceTask2 {
         newTemp = (unit.equals("C")) ? (temp - 32) * 5 / 9 : (temp * 5 / 9) + 32;
         
         System.out.printf("The temperature is %.2f", newTemp);
-               
+        
+                
+                
                                 
         scanner.close();
     }
