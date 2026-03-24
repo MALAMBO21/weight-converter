@@ -54,5 +54,8 @@ public class Bankprogram {
         scanner.close();
     }
     
+    static void showBalance(double balance){
+        System.out.printf("$%f", balance);
     
+  }
 }
