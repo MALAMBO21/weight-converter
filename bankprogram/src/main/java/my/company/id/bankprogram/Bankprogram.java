@@ -1,16 +1,36 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- */
 
 package my.company.id.bankprogram;
+import java.util.Scanner;
 
-/**
- *
- * @author Lenovo
- */
 public class Bankprogram {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+       
+        Scanner scanner = new Scanner(System.in);
+        
+        //BANKING PROGRAM 
+        
+        // DECLAIR VARIABLES
+        
+        double balance;
+        boolean isRunning = true;
+        int choice;
+        
+        // DECLAIR VARIABLES
+        
+        
+        
+        // DISPLAY MENU
+        
+        // GET AND PROCESS USER CHOICE
+        
+        //SHOW BALANCE
+        
+        // DEPOSIT
+        
+        //WITHDRAW
+        
+        //EXIT MESSAGE
+       
     }
 }
