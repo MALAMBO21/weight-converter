@@ -3,6 +3,7 @@ package my.company.id.bankprogram;
 import java.util.Scanner;
 
 public class Bankprogram {
+    static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
        
@@ -12,7 +13,7 @@ public class Bankprogram {
         
         // DECLAIR VARIABLES
         
-        double balance;
+        double balance = 0;
         boolean isRunning = true;
         int choice;  
         
@@ -33,17 +34,16 @@ public class Bankprogram {
         choice = scanner.nextInt();
         
         switch(choice){
-            case 1 -> System.out.println("SHOW BALANCE");
-            case 2 -> System.out.println("DEPOSIT");
+            case 1 -> System.out.println(balance);
+            case 2 -> balance += deposit();
             case 3 -> System.out.println("WITHDRAW");
             case 4 -> isRunning = false; 
             default -> System.out.println("INVALID CHOICE");
         }
         
     }
-    
-        
-        //SHOW BALANCE
+  
+       
         
         // DEPOSIT
         
@@ -55,7 +55,28 @@ public class Bankprogram {
     }
     
     static void showBalance(double balance){
-        System.out.printf("$%f", balance);
+        
+        //SHOW BALANCE
+         System.out.println("**************");
+        System.out.printf("R%.2f\n", balance);
     
   }
+    static double deposit(){
+        
+        double amount;
+        
+         System.out.println("Enter amount to be deposited");
+          amount = scanner.nextDouble();
+          
+          if(amount < 0){
+              System.out.println("Amount cannot be negative");
+              return 0;
+          }
+          else{
+              return amount;
+          }
+         
+               
+    }
 }
+
