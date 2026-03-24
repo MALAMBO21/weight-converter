@@ -18,8 +18,8 @@ public class Bankprogram {
         
         
         // DISPLAY MENU
-        
-        System.out.println("*****************");
+        while(isRunning){
+              System.out.println("*****************");
         System.out.println("BANKING PROGRAM");
         System.out.println("******************");
         System.out.println("1. Show balance");
@@ -30,7 +30,18 @@ public class Bankprogram {
         // GET AND PROCESS USER CHOICE
         
         System.out.println("Enter your choice(1-4): ");
-        choice
+        choice = scanner.nextInt();
+        
+        switch(choice){
+            case 1 -> System.out.println("SHOW BALANCE");
+            case 2 -> System.out.println("DEPOSIT");
+            case 3 -> System.out.println("WITHDRAW");
+            case 4 -> isRunning = false; 
+            default -> System.out.println("INVALID CHOICE");
+        }
+        
+    }
+    
         
         //SHOW BALANCE
         
@@ -40,5 +51,8 @@ public class Bankprogram {
         
         //EXIT MESSAGE
        
+        scanner.close();
     }
+    
+    
 }
