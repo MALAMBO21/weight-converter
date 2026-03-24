@@ -44,9 +44,9 @@ public class Bankprogram {
     }
   
        
-       
-        
-        //EXIT MESSAGE
+     System.out.println("**********************");
+     System.out.println("Thank you! Have a nice day!");
+     System.out.println("**********************");
        
         scanner.close();
     }
